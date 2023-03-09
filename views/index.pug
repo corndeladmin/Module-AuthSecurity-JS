@@ -3,7 +3,6 @@ extends layout
 block content
   h1= title
   form(action='/phone-number', method='POST')
-    p
-      label(for='phone') Phone Number:
-      input(type='text', name='phone', value='')
+    label(for='phone') Phone Number:
+    input(type='text', name='phone', value='')
     input(type='submit', value='Submit')
