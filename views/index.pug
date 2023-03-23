@@ -2,4 +2,7 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  form(action='/phone-number', method='POST')
+    label(for='phone') Phone Number:
+    input(type='text', name='phone', value='')
+    input(type='submit', value='Submit')
